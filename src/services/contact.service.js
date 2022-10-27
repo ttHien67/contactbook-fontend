@@ -22,7 +22,7 @@ class ContactService {
     }
 
     async update(id, data) {
-        return (await this.api.put(`/${id}`)).data;
+        return (await this.api.put(`/${id}`, data)).data;
     }
 
     async delete(id) {

@@ -1,9 +1,9 @@
 <script>
     export default {
         props: {
-            modalValue: { type: String, default: ''},
+            modelValue: { type: String, default: ''},
         },
-        emits: ['submit', 'update:modalValue'],
+        emits: ['submit', 'update:modelValue'],
         methods: {
             updateModelValue(e) {
                 this.$emit('update:modelValue', e.target.value);
