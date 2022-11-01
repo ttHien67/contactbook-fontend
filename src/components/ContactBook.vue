@@ -22,7 +22,10 @@
                     <i class="fas fa-redo"></i> Làm mới
                 </button>
 
-                <button class="btn btn-sm btn-success" @click="goToAddContact()">
+                <button 
+                    class="btn btn-sm btn-success" 
+                    @click="goToAddContact()"
+                >
                     <i class="fas fa-plus"></i> Thêm mới
                 </button>
 
@@ -138,7 +141,7 @@
             },
 
             goToAddContact() {
-                this.$router.push({name: 'Contact.add'});
+                this.$router.push({name: 'contact.add'});
             },
 
         },
@@ -146,10 +149,6 @@
         mounted() {
             this.refreshList();
         }
-
-
-
-
     };
 
 
